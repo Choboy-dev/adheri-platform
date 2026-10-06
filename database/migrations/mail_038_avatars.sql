@@ -1,0 +1,1 @@
+-- mail_038_avatars — no-op on MySQL port (columns included in mail_036)

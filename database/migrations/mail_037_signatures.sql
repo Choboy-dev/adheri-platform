@@ -1,0 +1,1 @@
+-- mail_037_signatures — no-op on MySQL port (columns included in mail_036)

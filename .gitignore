@@ -1,0 +1,38 @@
+# secrets
+/.env
+/.deploy.env
+
+# dependencies
+/vendor/
+
+# runtime data
+/public/uploads/*
+!/public/uploads/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/cache/*
+!/storage/cache/.gitkeep
+/storage/mail/*/*
+!/storage/mail/*/.gitkeep
+/storage/uploads/*/*
+!/storage/uploads/*/.gitkeep
+
+# original event photography and flyers (~200 MB, lives on the server only)
+/public/assets/img/gallery/
+/public/assets/img/misc/
+/public/assets/img/flyers/
+
+# staff-only docs and local tooling
+/docs/*.pdf
+/public/docs/
+/public/check.php
+/MAIL_CREATOR_GUIDE.md
+/adheri-cpanel-upload.zip
+/scripts/deploy-*.sh
+/assets
+
+# os
+.DS_Store
+*.log
+error_log
+.phpunit.result.cache

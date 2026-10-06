@@ -1,0 +1,18 @@
+/* LeadBirdDropdown */
+.lb-dropdown { position: relative; display: inline-block; }
+.lb-dropdown-trigger {
+  border: 1px solid #d9e2ec; background: #fff; border-radius: .65rem;
+  padding: .45rem .75rem; font: inherit; cursor: pointer; min-width: 120px; text-align: left;
+}
+.lb-dropdown-menu {
+  position: absolute; top: calc(100% + 4px); left: 0; z-index: 60;
+  min-width: 100%; background: #fff; border: 1px solid #d9e2ec; border-radius: .75rem;
+  box-shadow: 0 12px 30px rgb(0 0 0 / .1); padding: .35rem; display: none;
+}
+.lb-dropdown.is-open .lb-dropdown-menu { display: block; }
+.lb-dropdown-option {
+  display: block; width: 100%; text-align: left; border: 0; background: transparent;
+  padding: .45rem .6rem; border-radius: .5rem; cursor: pointer; font: inherit;
+}
+.lb-dropdown-option:hover, .lb-dropdown-option.is-active { background: rgb(0 113 188 / 0.09); color: #0A4F8A; }
+select[data-lb-select] { /* enhanced by JS */ }

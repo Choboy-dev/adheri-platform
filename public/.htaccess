@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Serve existing files directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# ADHERI Mail — extensionless routes
+RewriteRule ^mail/?$ mail/index.php [L,QSA]
+RewriteRule ^mail/(.+?)/?$ mail/$1.php [L,QSA]
+
+RewriteRule ^webhooks/resend-mail/?$ webhooks/resend-mail.php [L,QSA]
+RewriteRule ^api/mail/setup/?$ api/mail/setup.php [L,QSA]
+RewriteRule ^api/mail/sync-inbound/?$ api/mail/sync-inbound.php [L,QSA]
+
+RewriteRule ^ index.php [L]

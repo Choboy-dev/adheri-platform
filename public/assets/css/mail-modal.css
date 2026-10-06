@@ -1,0 +1,19 @@
+/* LeadBirdModal */
+.lb-modal-root {
+  position: fixed; inset: 0; z-index: 200; display: grid; place-items: center;
+  background: rgb(15 23 42 / 0.45); padding: 1rem;
+}
+.lb-modal {
+  width: min(420px, 100%); background: #fff; border-radius: 1rem;
+  box-shadow: 0 24px 60px rgb(0 0 0 / .25); padding: 1.25rem 1.35rem;
+  font-family: "Manrope", system-ui, sans-serif;
+}
+.lb-modal h2 { margin: 0 0 .5rem; font-family: "Outfit", system-ui, sans-serif; font-size: 1.15rem; }
+.lb-modal p { margin: 0 0 1.25rem; color: #5c6670; line-height: 1.45; }
+.lb-modal-actions { display: flex; justify-content: flex-end; gap: .5rem; }
+.lb-modal-actions button {
+  border: 0; border-radius: 999px; padding: .55rem 1rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+.lb-modal-cancel { background: #f4f7fa; color: #222; }
+.lb-modal-confirm { background: #0071BC; color: #fff; }
+.lb-modal-confirm.is-danger { background: #c62828; }
